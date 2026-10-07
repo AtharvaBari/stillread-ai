@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f0f9ff;
+  --foreground: #0f172a;
+  --primary: #006194;
+  --primary-hover: #0284c7;
+}
+
+body {
+  background: radial-gradient(circle at top right, #e0f2fe 0%, #f0f9ff 50%, #bae6fd 100%);
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta-sans), sans-serif;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glass card styling */
+.glass-card {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
